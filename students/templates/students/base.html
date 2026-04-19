@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <nav style="background-color: lightcoral;">
+        <ul>
+            <li><a href="{% url 'student_home' %}">Home</a></li>
+            <li><a href="{% url 'add_students' %}">Add Student</a></li>
+            <li><a href="{% url 'get_students'%}">Get Students</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to Students Management</h1>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

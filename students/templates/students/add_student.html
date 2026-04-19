@@ -1,0 +1,23 @@
+{%  extends 'students/base.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <label for="id">ID</label>
+        <input type="number" name="id" id="id">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+        <button type="submit">Add Student</button>
+    </form>
+{% endblock %}
